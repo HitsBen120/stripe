@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Stripe CC Charger</title>
+</head>
+<body>
+    <h1>Stripe CC Charger</h1>
+    <form method="POST">
+        <label for="cardName">Cardholder Name:</label>
+        <input type="text" id="cardName" name="cardName" required><br>
+
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required><br>
+
+        <label for="cardExpiry">Expiry Date (MM/YY):</label>
+        <input type="text" id="cardExpiry" name="cardExpiry" required><br>
+
+        <label for="cardCvc">CVC:</label>
+        <input type="text" id="cardCvc" name="cardCvc" required><br>
+
+        <label for="cardAmount">Amount:</label>
+        <input type="number" id="cardAmount" name="cardAmount" min="0" step="0.01" required><br>
+
+        <input type="submit" value="Charge">
+    </form>
+</body>
+</html>
